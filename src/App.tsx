@@ -15,14 +15,14 @@ const App = () => {
   return (
     <>
       <h1>Counter</h1>
-      <div>{count}</div>
+      <div className="counter">{count}</div>
       <button onClick={() => dispatch(increment())}>Increment</button>
       <button onClick={() => dispatch(decrement())}>Decrement</button>
 
       <h1>Users</h1>
-      {users.map(({ id, email }) =>
+      {users.map(({ id, email, name}) =>
         <div key={id}>
-          <h3>{email}</h3>
+          <h3>{name} - {email}</h3>
         </div>
       )}
       {isLoading && <h1>Loading ... </h1>}
