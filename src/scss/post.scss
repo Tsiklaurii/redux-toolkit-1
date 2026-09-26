@@ -1,0 +1,49 @@
+.post_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    width: auto;
+    justify-content: space-between;
+}
+
+.post_card {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 250px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    height: 360px;
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+.post_card:hover {
+    background-color: rgb(240, 240, 240);
+    transition: all 0.3s;
+}
+
+.select_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.select {
+    padding: 10px;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+}
