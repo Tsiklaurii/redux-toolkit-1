@@ -1,9 +1,11 @@
-$primary_color: steelblue;
+@import './navbar.scss';
+@import './post.scss';
+@import './random.scss';
 
-body {
-    background-color: $primary_color;
-    margin: auto;
-    width: 500px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .counter {
