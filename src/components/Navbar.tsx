@@ -5,6 +5,7 @@ const Navbar = () => {
         <nav className="navbar">
             <Link to={'/posts'}>Posts</Link>
             <Link to={'/'}>Home</Link>
+            <Link to={'/random-products'}>Random products</Link>
         </nav>
     )
 }

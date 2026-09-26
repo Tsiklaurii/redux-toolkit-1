@@ -1,9 +1,10 @@
-import { fetchBaseQuery, createApi } from "@reduxjs/toolkit/query/react";
+import { createApi } from "@reduxjs/toolkit/query/react";
+import { postsBaseQuery } from "../../api/posts.axios";
 import type { IPost } from "../../interfaces/post.interface";
 
 export const postApi = createApi({
     reducerPath: "PostAPI",
-    baseQuery: fetchBaseQuery({ baseUrl: "https://gorest.co.in/public/v2/" }),
+    baseQuery: postsBaseQuery,
     tagTypes: ["Post"],
     endpoints: (build) => ({
         fetchPosts: build.query<IPost[], { page: number; per_page: number }>({
